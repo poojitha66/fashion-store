@@ -1,0 +1,7 @@
+<svg width="800" height="520" viewBox="0 0 800 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="520" rx="40" fill="#f8fafc" />
+  <rect x="80" y="80" width="240" height="360" rx="30" fill="#e2e8f0" />
+  <rect x="360" y="140" width="200" height="260" rx="26" fill="#cbd5f5" />
+  <rect x="590" y="200" width="120" height="180" rx="20" fill="#94a3b8" />
+  <text x="90" y="470" fill="#475569" font-family="Arial" font-size="18" letter-spacing="3">CITY UNIFORM</text>
+</svg>

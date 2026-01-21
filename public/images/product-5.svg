@@ -1,0 +1,6 @@
+<svg width="640" height="480" viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="480" rx="36" fill="#f1f5f9" />
+  <rect x="110" y="90" width="250" height="320" rx="30" fill="#cbd5f5" />
+  <rect x="380" y="140" width="150" height="240" rx="24" fill="#94a3f1" />
+  <text x="110" y="420" fill="#1e3a8a" font-family="Arial" font-size="18" letter-spacing="3">SILK BLOUSE</text>
+</svg>
