@@ -1,0 +1,6 @@
+<svg width="640" height="480" viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="480" rx="36" fill="#f4f4f5" />
+  <rect x="120" y="60" width="220" height="340" rx="28" fill="#d4d4d8" />
+  <rect x="360" y="110" width="160" height="270" rx="24" fill="#a1a1aa" />
+  <text x="80" y="420" fill="#18181b" font-family="Arial" font-size="18" letter-spacing="3">UTILITY JACKET</text>
+</svg>
