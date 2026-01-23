@@ -67,10 +67,3 @@ Atelier Noire is a modern, minimalist fashion storefront designed to showcase el
 - Neutral color palettes and refined typography
 - Product-first visual hierarchy
 
----
-
-## 🚀 Getting Started
-
-### Clone the repository
-```bash
-git clone https://github.com/<your-username>/fashion-store.git
