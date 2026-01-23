@@ -78,12 +78,12 @@ export default function ProductPage({ params }: PageProps) {
     <div className="mx-auto w-full max-w-6xl px-6 pb-24 pt-14">
       <div className="grid gap-10 lg:grid-cols-[1.1fr,0.9fr]">
         <div className="space-y-4">
-          <div className="relative h-80 overflow-hidden rounded-3xl">
+          <div className="relative h-80 overflow-hidden rounded-3xl bg-zinc-50"></div>
             <Image
               src={product.image}
               alt={product.name}
               fill
-              className="object-cover"
+              className="object-contain"
               sizes="(min-width: 1024px) 55vw, 100vw"
             />
           </div>
@@ -91,13 +91,13 @@ export default function ProductPage({ params }: PageProps) {
             {Array.from({ length: 3 }).map((_, index) => (
               <div
                 key={`preview-${index}`}
-                className="relative h-24 overflow-hidden rounded-2xl"
+                className="relative h-24 overflow-hidden rounded-2xl bg-zinc-50"
               >
                 <Image
                   src={product.image}
                   alt={`${product.name} preview ${index + 1}`}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   sizes="(min-width: 768px) 18vw, 33vw"
                 />
               </div>

@@ -45,12 +45,13 @@ export default function CollectionsPage() {
             key={collection.title}
             className="rounded-3xl bg-white p-8 shadow-sm"
           >
-            <div className="relative h-52 overflow-hidden rounded-2xl">
+            <div className="relative h-52 overflow-hidden rounded-2xl bg-zinc-50">
+              contai
               <Image
                 src={collection.image}
                 alt={collection.title}
                 fill
-                className="object-cover"
+                className="object-contain"
                 sizes="(min-width: 768px) 45vw, 100vw"
               />
             </div>

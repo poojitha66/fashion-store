@@ -47,12 +47,30 @@ const products = [
 ];
 
 const filters = [
-  "New arrivals",
-  "Outerwear",
-  "Tailoring",
-  "Knitwear",
-  "Dresses",
-  "Accessories",
+  {
+    label: "Type",
+    options: [
+      "All",
+      "New arrivals",
+      "Outerwear",
+      "Tailoring",
+      "Knitwear",
+      "Dresses",
+      "Accessories",
+    ],
+  },
+  {
+    label: "Size",
+    options: ["All", "XS", "S", "M", "L", "XL"],
+  },
+  {
+    label: "Color",
+    options: ["All", "Obsidian", "Ivory", "Sandstone", "Slate", "Midnight"],
+  },
+  {
+    label: "Sort by",
+    options: ["Featured", "Newest", "Price: Low to High", "Price: High to Low"],
+  },
 ];
 
 export default function ProductsPage() {
@@ -74,22 +92,37 @@ export default function ProductsPage() {
 
       <div className="mt-10 grid gap-8 lg:grid-cols-[240px,1fr]">
         <aside className="rounded-3xl bg-white p-6 shadow-sm">
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-zinc-400">
-            Filters
-          </p>
-          <div className="mt-6 flex flex-col gap-3 text-sm text-zinc-600">
-            {filters.map((filter) => (
-              <label
-                key={filter}
-                className="flex items-center justify-between rounded-full border border-zinc-200 px-4 py-2"
-              >
-                <span>{filter}</span>
-                <input type="checkbox" className="h-3 w-3" />
-              </label>
-            ))}
+          <div className="flex items-center justify-between">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-zinc-400">
+              Filters
+            </p>
+            <span className="rounded-full bg-zinc-100 px-2 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-zinc-500">
+              All
+            </span>
           </div>
-          <div className="mt-6 rounded-2xl border border-dashed border-zinc-200 bg-zinc-50 p-4 text-xs text-zinc-500">
-            Filters are frontend-only for this static preview.
+          <div className="mt-6 flex flex-col gap-4 text-sm text-zinc-600">
+            {filters.map((filter) => (
+                <details
+                key={filter.label}
+                className="rounded-2xl border border-zinc-200 bg-white px-4 py-3 shadow-sm"
+              >
+                <summary className="flex cursor-pointer list-none items-center justify-between text-xs font-semibold uppercase tracking-[0.3em] text-zinc-400">
+                  <span>{filter.label}</span>
+                  <span className="rounded-full bg-zinc-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-zinc-400">
+                    All
+                  </span>
+                </summary>
+                <div className="mt-3">
+                  <select className="w-full rounded-2xl border border-zinc-200 bg-white px-4 py-3 text-sm font-medium text-zinc-700 shadow-sm focus:border-zinc-400 focus:outline-none">
+                    {filter.options.map((option) => (
+                      <option key={option} value={option}>
+                        {option}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              </details>
+            ))}
           </div>
         </aside>
 
@@ -100,12 +133,12 @@ export default function ProductsPage() {
               href={product.href}
               className="group rounded-3xl bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
             >
-              <div className="relative h-44 overflow-hidden rounded-2xl">
+              <div className="relative h-44 overflow-hidden rounded-2xl bg-zinc-50">
                 <Image
                   src={product.image}
                   alt={product.name}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   sizes="(min-width: 768px) 40vw, 100vw"
                 />
               </div>

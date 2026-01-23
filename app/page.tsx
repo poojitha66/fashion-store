@@ -12,7 +12,7 @@ const featuredProducts = [
     name: "Structured Linen Blazer",
     detail: "Sandstone",
     price: "$310",
-    image: "/images/blazer.png",
+    image: "/images/Structured Linen Blazer (Outerwear).png",
   },
   {
     name: "Relaxed Pleated Trouser",
@@ -76,12 +76,12 @@ export default function Home() {
           </div>
         </div>
         <div className="grid gap-4">
-          <div className="relative h-80 overflow-hidden rounded-3xl sm:h-96">
+          <div className="relative h-80 overflow-hidden rounded-3xl bg-zinc-900 sm:h-96">
             <Image
               src="/images/top-banner.png"
               alt="Monochrome editorial styling"
               fill
-              className="object-cover"
+              className="object-contain"
               sizes="(min-width: 1024px) 40vw, 100vw"
               priority
             />
@@ -160,12 +160,12 @@ export default function Home() {
               key={product.name}
               className="rounded-3xl bg-white p-6 shadow-sm"
             >
-              <div className="relative h-40 overflow-hidden rounded-2xl">
+              <div className="relative h-40 overflow-hidden rounded-2xl bg-zinc-50">
                 <Image
                   src={product.image}
                   alt={product.name}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   sizes="(min-width: 768px) 33vw, 100vw"
                 />
               </div>
