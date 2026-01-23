@@ -7,14 +7,19 @@ Atelier Noire is a modern, minimalist fashion storefront designed to showcase el
 ## ✨ Features
 
 - **Modern Landing Page**
-  - Hero section introducing the Autumn collection
+  - Introducing the Autumn collection
   - Clear value propositions and call-to-action buttons
   - Editorial-style featured collections
+  - <img width="852" height="2048" alt="image" src="https://github.com/user-attachments/assets/8f31376a-b54b-4304-893d-1242ac5216bb" />
+
 
 - **Products Page**
   - Grid-based product listing
   - Category-based items (Outerwear, Dresses, Tops, Bottoms, Accessories)
   - Product cards with pricing and details
+ 
+  - <img width="1131" height="2048" alt="image" src="https://github.com/user-attachments/assets/f1aa089c-559f-4990-a846-e8e6375092b4" />
+
 
 - **Collections Page**
   - Curated edits such as:
@@ -22,11 +27,15 @@ Atelier Noire is a modern, minimalist fashion storefront designed to showcase el
     - After Hours
     - City Uniform
   - Editorial layouts for storytelling and brand identity
+  - <img width="1200" height="1512" alt="image" src="https://github.com/user-attachments/assets/5002391e-546a-4d59-93c1-4e7f9149abe2" />
+
 
 - **Cart Page (Frontend Preview)**
   - Add-to-cart UI
   - Subtotal and total price calculation
   - Checkout CTA (frontend-only preview)
+  - <img width="1200" height="1354" alt="image" src="https://github.com/user-attachments/assets/458ac560-415f-4ea0-a181-0938dd886eaf" />
+
 
 - **Responsive Design**
   - Optimized for desktop and modern screen sizes
