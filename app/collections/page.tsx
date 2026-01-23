@@ -5,17 +5,17 @@ const collections = [
   {
     title: "Studio Essentials",
     description: "Polished layers and structured separates for modern tailoring.",
-    image: "/images/collection-1.svg",
+    image: "/images/Studio essentials.png",
   },
   {
     title: "After Hours",
     description: "Fluid silhouettes and luminous textures for nightfall.",
-    image: "/images/collection-2.svg",
+    image: "/images/After hours.png",
   },
   {
     title: "City Uniform",
     description: "Minimal palettes, elevated knitwear, and refined staples.",
-    image: "/images/collection-3.svg",
+    image: "/images/city uniform.png",
   },
 ];
 
