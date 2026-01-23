@@ -5,17 +5,17 @@ const collections = [
   {
     title: "Studio Essentials",
     description: "Polished layers and structured separates for modern tailoring.",
-    image: "/images/collection-1.svg",
+    image: "/images/Studio essentials.png",
   },
   {
     title: "After Hours",
     description: "Fluid silhouettes and luminous textures for nightfall.",
-    image: "/images/collection-2.svg",
+    image: "/images/After hours.png",
   },
   {
     title: "City Uniform",
     description: "Minimal palettes, elevated knitwear, and refined staples.",
-    image: "/images/collection-3.svg",
+    image: "/images/city uniform.png",
   },
 ];
 
@@ -45,12 +45,13 @@ export default function CollectionsPage() {
             key={collection.title}
             className="rounded-3xl bg-white p-8 shadow-sm"
           >
-            <div className="relative h-52 overflow-hidden rounded-2xl">
+            <div className="relative h-52 overflow-hidden rounded-2xl bg-zinc-50">
+              contai
               <Image
                 src={collection.image}
                 alt={collection.title}
                 fill
-                className="object-cover"
+                className="object-contain"
                 sizes="(min-width: 768px) 45vw, 100vw"
               />
             </div>
