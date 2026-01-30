@@ -7,42 +7,42 @@ const productDetails = {
     price: "$295",
     description:
       "A structured jacket with refined hardware, designed to layer effortlessly over knits and dresses.",
-    image: "/images/product-1.svg",
+    image: "/images/Cropped Utility Jacket (Outerwear).png",
   },
   "bias-cut-slip-dress": {
     name: "Bias Cut Slip Dress",
     price: "$210",
     description:
       "Fluid drape with a soft sheen, finished with adjustable straps and a slim silhouette.",
-    image: "/images/product-2.svg",
+    image: "/images/Bias Cut Slip Dress (Dresses).png",
   },
   "sculpted-knit-tank": {
     name: "Sculpted Knit Tank",
     price: "$98",
     description:
       "A second-skin knit with smoothing ribbing and a clean neckline, perfect for layering.",
-    image: "/images/product-3.svg",
+    image: "/images/Sculpted Knit Tank (Essentials).png",
   },
   "wide-leg-trousers": {
     name: "Wide-Leg Trousers",
     price: "$185",
     description:
       "Tailored with a modern rise and crisp front pleats for an effortless, elongated line.",
-    image: "/images/product-4.svg",
+    image: "/images/Wide-Leg Trousers (Bottoms).png",
   },
   "silk-blend-blouse": {
     name: "Silk Blend Blouse",
     price: "$165",
     description:
       "Lightweight blouse with a subtle sheen and relaxed drape to balance structured looks.",
-    image: "/images/product-5.svg",
+    image: "/images/Silk Blend Blouse (Tops).png",
   },
   "leather-belted-skirt": {
     name: "Leather Belted Skirt",
     price: "$220",
     description:
       "Supple leather skirt with tonal belt detailing and a soft A-line profile.",
-    image: "/images/product-6.svg",
+    image: "/images/Leather Belted Skirt (Accessories).png",
   },
 };
 
@@ -78,12 +78,12 @@ export default function ProductPage({ params }: PageProps) {
     <div className="mx-auto w-full max-w-6xl px-6 pb-24 pt-14">
       <div className="grid gap-10 lg:grid-cols-[1.1fr,0.9fr]">
         <div className="space-y-4">
-          <div className="relative h-80 overflow-hidden rounded-3xl">
+          <div className="relative h-80 overflow-hidden rounded-3xl bg-zinc-50"></div>
             <Image
               src={product.image}
               alt={product.name}
               fill
-              className="object-cover"
+              className="object-contain"
               sizes="(min-width: 1024px) 55vw, 100vw"
             />
           </div>
@@ -91,13 +91,13 @@ export default function ProductPage({ params }: PageProps) {
             {Array.from({ length: 3 }).map((_, index) => (
               <div
                 key={`preview-${index}`}
-                className="relative h-24 overflow-hidden rounded-2xl"
+                className="relative h-24 overflow-hidden rounded-2xl bg-zinc-50"
               >
                 <Image
                   src={product.image}
                   alt={`${product.name} preview ${index + 1}`}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   sizes="(min-width: 768px) 18vw, 33vw"
                 />
               </div>

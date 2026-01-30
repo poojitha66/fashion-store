@@ -6,19 +6,19 @@ const featuredProducts = [
     name: "Silk Sateen Wrap Dress",
     detail: "Champagne · Limited",
     price: "$248",
-    image: "/images/product-2.svg",
+    image: "/images/silksateenwrap.png",
   },
   {
     name: "Structured Linen Blazer",
     detail: "Sandstone",
     price: "$310",
-    image: "/images/product-5.svg",
+    image: "/images/Structured Linen Blazer (Outerwear).png",
   },
   {
     name: "Relaxed Pleated Trouser",
     detail: "Obsidian",
     price: "$180",
-    image: "/images/product-4.svg",
+    image: "/images/trouser.png",
   },
 ];
 
@@ -76,12 +76,12 @@ export default function Home() {
           </div>
         </div>
         <div className="grid gap-4">
-          <div className="relative h-80 overflow-hidden rounded-3xl sm:h-96">
+          <div className="relative h-80 overflow-hidden rounded-3xl bg-zinc-900 sm:h-96">
             <Image
-              src="/images/hero-editorial.svg"
+              src="/images/top-banner.png"
               alt="Monochrome editorial styling"
               fill
-              className="object-cover"
+              className="object-contain"
               sizes="(min-width: 1024px) 40vw, 100vw"
               priority
             />
@@ -160,12 +160,12 @@ export default function Home() {
               key={product.name}
               className="rounded-3xl bg-white p-6 shadow-sm"
             >
-              <div className="relative h-40 overflow-hidden rounded-2xl">
+              <div className="relative h-40 overflow-hidden rounded-2xl bg-zinc-50">
                 <Image
                   src={product.image}
                   alt={product.name}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   sizes="(min-width: 768px) 33vw, 100vw"
                 />
               </div>
